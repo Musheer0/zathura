@@ -1,3 +1,4 @@
+import GitHubStars from "../stars"
 
 const Hero = () => {
   return (
@@ -8,9 +9,10 @@ const Hero = () => {
               boxShadow: '-4px 15px 20px rgb(0,0,0,.2)'
              }}
        >
-          <img src="logo.png" alt="logo" />
+          <img src="logo.webp" alt="logo" />
        </div>
-       <h1 className='text-[10vw] sm:text-[4vw] font-semibold leading-none dm-sans'>
+       <GitHubStars/>
+       <h1 className='text-[10vw] sm:text-[6vw] md:text-[5vw] lg:text-[4vw] font-semibold leading-none dm-sans'>
        The easiest GUI tool to learn and debug assembly
        </h1>
        <p className='text-sm text-zinc-500'>
@@ -30,6 +32,7 @@ const Hero = () => {
       </button>
   </a>
       </div>
+      <a href="https://github.com/ZathuraDbg">
       <button
       className='border  w-fit  font-semibold shadow-xl shadow-transparent transition-all duration-300 ease-in-out    capitalize  px-5 py-3 rounded-full'
       >
@@ -37,15 +40,16 @@ const Hero = () => {
          Contribute
          </p>
       </button>
+      </a>
      </div>
       </div>
-      <div className="right relative h-full flex-1 hidden sm:flex  rounded-l-3xl "
+      <div className="right relative h-full flex-1 hidden md:flex  rounded-l-3xl "
            style={{
             boxShadow: '-4px 10px 25px rgb(0,0,0,.4)'
            }}
       >
         <img src="backdrop.png" alt="" className='absolute w-[300px] -left-20 -top-20 opacity-5 ' />
-        <img src="screenshot2-cropped.png" alt="hero-img" className='relative  rounded-l-3xl w-full h-full object-cover origin-top-right' />
+        <img src="screenshot2-cropped.webp" alt="hero-img" className='relative  rounded-l-3xl w-full h-full object-cover origin-top-right' />
       </div>
     </div>
   )

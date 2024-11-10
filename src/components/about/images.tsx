@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'; // React Icons
 
 const ImageCarousel = () => {
   const images = [
-    'screenshot1.png',
-    'screenshot2.png',
+    'screenshot1.webp',
+    'screenshot2.webp',
     'screenshot3.png'
   ];
 
@@ -59,7 +59,9 @@ const ImageCarousel = () => {
         ))}
       </div>
   
+
       <button
+      aria-label='left'
         onClick={prevImage}
         className="absolute top-1/2 left-5 transform -translate-y-1/2 p-3 bg-gray-800 text-white rounded-full shadow-lg hover:bg-gray-700 transition duration-200"
       >
@@ -67,6 +69,7 @@ const ImageCarousel = () => {
       </button>
       {/* Next Button (using React Icons) */}
       <button
+      aria-label='rightf'
         onClick={nextImage}
         className="absolute top-1/2 right-5 transform -translate-y-1/2 p-3 bg-gray-800 text-white rounded-full shadow-lg hover:bg-gray-700 transition duration-200"
       >

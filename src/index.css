@@ -13,3 +13,25 @@
     --primary : #090e18;
     --secondary: white
 }
+/* Style for the scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the vertical scrollbar */
+    height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Track of the scrollbar */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Light background for the track */
+}
+
+/* Handle (the draggable part) of the scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: #000000; /* Black color for the thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    border: 2px solid #ffffff; /* Optional: Adds a white border around the thumb */
+}
+
+/* Optional: When hovering over the thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #444444; /* Darker shade when hovered */
+}

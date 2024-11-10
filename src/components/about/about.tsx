@@ -16,7 +16,7 @@ const About = () => {
 Only x86_64 architecture is supported at the moment but we plan to support all major architectures over the time.</p>
 
         </div>
- <ScrollImage src="screenshot1.png"/>
+ <ScrollImage />
  <Links className="sm:hidden flex fixed bottom-5  left-1/2 -translate-x-1/2" side="top"/>
 
     </div> 

@@ -1,6 +1,6 @@
-import { motion, useInView } from 'framer-motion';
+import { motion} from 'framer-motion';
 import Features from './features';
-import { useEffect, useRef } from 'react';
+import {useRef } from 'react';
 
 const WhyZatura = () => {
   const ref = useRef(null)

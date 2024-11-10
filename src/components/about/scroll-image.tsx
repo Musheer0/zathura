@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import ImageCarousel from "./images";
 
-const ScrollImage = ({src}:{src:string}) => {
+const ScrollImage = () => {
     const ref = useRef<HTMLDivElement>(null)
     const {scrollYProgress} = useScroll({
         target: ref,

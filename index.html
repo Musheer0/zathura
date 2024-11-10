@@ -3,9 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/jpg" href="/logo.jpg" />
+    <meta property="og:title" content="Zathura dbg" />
+    <meta property="og:description" content="ZathuraDbg is an open-source GUI emulation based debugger for assembly. The primary goal of ZathuraDbg is to make the process of learning assembly easier by having a clean UI that explains itself and works on the go.
+    Only x86_64 architecture is supported at the moment but we plan to support all major architectures over the time." />
+    <meta property="og:image" content="/banner.jpeg" />
+    <meta property="og:url" content="https://zathuradbg.github.io/" />
+    <meta property="og:image:alt" content="zathura banner" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Zathura dbg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zathura db</title>
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="zathura banner" />
+  <meta name="twitter:title" content="Zathura dbg" />
+  <meta name="twitter:description" content="ZathuraDbg is an open-source GUI emulation based debugger for assembly. The primary goal of ZathuraDbg is to make the process of learning assembly easier by having a clean UI that explains itself and works on the go.
+  Only x86_64 architecture is supported at the moment but we plan to support all major architectures over the time." />
+  <meta name="twitter:image" content="/banner.jpeg" />
+  <meta name="twitter:image:alt" content="zathura banner" />
+  <meta name="twitter:site" content="@ZathuraDbg" />
+  <meta name="twitter:creator" content="@rcx86" />
+   <!-- Canonical URL -->
+   <link rel="canonical" href="https://zathuradbg.github.io/" />
+
+   <!-- Structured Data (JSON-LD) -->
+   <script type="application/ld+json">
+     {
+       "@context": "https://schema.org",
+       "@type": "WebSite",
+       "name": "ZathuraDbg",
+       "url": "https://zathuradbg.github.io/",
+       "description": "ZathuraDbg is an open-source GUI debugger for assembly. Learn assembly with a clean UI designed for simplicity and support for x86_64 architecture.",
+       "publisher": {
+         "@type": "Organization",
+         "name": "ZathuraDbg",
+         "logo": "https://zathuradbg.github.io/logo.jpg"
+       }
+     }
+   </script>
+    <!-- General Meta Tags -->
+
+    <meta name="robots" content="index, follow" />
+    <title>ZathuraDbg: Open-Source GUI Debugger for Assembly | Learn Assembly with Ease</title>
+    <meta name="description" content="ZathuraDbg is an open-source GUI debugger for assembly. Learn assembly with a clean UI designed for simplicity and support for x86_64 architecture." />
   </head>
+  
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
