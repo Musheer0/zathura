@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className='w-full relative flex items-center justify-center pt-20 gap-2 sm:h-screen '>
       <div className="left sticky top-0 h-full flex-1 flex flex-col sm:pl-20 px-5 gap-3">
-       <div className='logo w-20 h-20 mb-3 rounded-xl'
+       <div className='logo w-[90px]  h-[90px] mb-3 rounded-xl'
             style={{
               boxShadow: '-4px 15px 20px rgb(0,0,0,.2)'
              }}
@@ -12,7 +12,7 @@ const Hero = () => {
           <img src="logo.webp" alt="logo" />
        </div>
        <GitHubStars/>
-       <h1 className='text-[10vw] sm:text-[6vw] md:text-[5vw] lg:text-[4vw] font-semibold leading-none dm-sans'>
+       <h1 className='text-[10vw]  sm:text-[6vw] md:text-[5vw] lg:text-[4vw] font-semibold leading-none dm-sans'>
        The easiest GUI tool to learn and debug assembly
        </h1>
        <p className='text-sm text-zinc-500'>
@@ -49,7 +49,7 @@ const Hero = () => {
            }}
       >
         <img src="backdrop.png" alt="" className='absolute w-[300px] -left-20 -top-20 opacity-5 ' />
-        <img src="screenshot2-cropped.webp" alt="hero-img" className='relative  rounded-l-3xl w-full h-full object-cover origin-top-right' />
+        <img src="screenshot2-cropped.png" alt="hero-img" className='relative   rounded-l-lg w-full h-full  object-left-top object-cover ' />
       </div>
     </div>
   )

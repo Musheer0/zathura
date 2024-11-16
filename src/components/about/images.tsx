@@ -11,6 +11,27 @@ const ImageCarousel = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'ArrowRight') {
+        nextImage(); // Right arrow pressed, go to next image
+      } else if (event.key === 'ArrowLeft') {
+        prevImage(); // Left arrow pressed, go to previous image
+      }
+      else if (event.key==='f'){
+        toggleFullscreen();
+      }
+    };
+
+    // Add event listener for keydown
+    window.addEventListener('keydown', handleKeyDown);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   // Automatic image change every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
@@ -31,11 +52,24 @@ const ImageCarousel = () => {
     );
   };
 
-  return (
-    <div className="relative w-full rounded-3xl border-4 border-purple-400 overflow-hidden">
-      {/* Previous Button (using React Icons) */}
-    
+  // Toggle fullscreen mode
+  const toggleFullscreen = () => {
+    const element = document.getElementById('carousel');
+    if (element) {
+      if (document.fullscreenElement) {
+        document.exitFullscreen(); // Exit fullscreen if already in fullscreen
+      } else {
+        element.requestFullscreen(); // Enter fullscreen
+      }
+    }
+  };
 
+  return (
+    <div
+      id="carousel"
+      className="relative w-full rounded-3xl border-4 border-purple-400 overflow-hidden"
+      onClick={toggleFullscreen} // Add onClick handler to enable fullscreen
+    >
       {/* Carousel Images with Continuous Slide */}
       <div
         className="flex transition-transform rounded-3xl duration-1000 ease-in-out"
@@ -48,7 +82,7 @@ const ImageCarousel = () => {
             animate={{ x: 0 }} // Slide into view for others
             exit={{ x: '-100%' }} // Slide out for others
             transition={{ duration: 1 }}
-            className="flex-shrink-0 rounded-3xl  w-full h-full"
+            className="flex-shrink-0 rounded-3xl w-full h-full"
           >
             <img
               src={image}
@@ -58,19 +92,26 @@ const ImageCarousel = () => {
           </motion.div>
         ))}
       </div>
-  
 
+      {/* Previous Button (using React Icons) */}
       <button
-      aria-label='left'
-        onClick={prevImage}
+        aria-label="Previous Image"
+        onClick={(e) => {
+          e.stopPropagation(); // Prevent the fullscreen toggle
+          prevImage(); // Go to the previous image
+        }}
         className="absolute top-1/2 left-5 transform -translate-y-1/2 p-3 bg-gray-800 text-white rounded-full shadow-lg hover:bg-gray-700 transition duration-200"
       >
         <AiOutlineLeft size={30} />
       </button>
+
       {/* Next Button (using React Icons) */}
       <button
-      aria-label='rightf'
-        onClick={nextImage}
+        aria-label="Next Image"
+        onClick={(e) => {
+          e.stopPropagation(); // Prevent the fullscreen toggle
+          nextImage(); // Go to the next image
+        }}
         className="absolute top-1/2 right-5 transform -translate-y-1/2 p-3 bg-gray-800 text-white rounded-full shadow-lg hover:bg-gray-700 transition duration-200"
       >
         <AiOutlineRight size={30} />
