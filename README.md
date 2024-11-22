@@ -92,7 +92,7 @@ This will help improve the site's visibility on search engines.
 Once you're ready to deploy, you can build the app using Vite's production build command:
 
 ```bash
-npm run build
+npm run deploy
 ```
 
 This will create an optimized build of your app in the `dist` folder, ready for deployment.
