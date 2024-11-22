@@ -1,7 +1,6 @@
 // bg-[linear-gradient(25deg,#AC56C1,#092258,#2D85CB)]
 
 import {
-  createBrowserRouter,
   createHashRouter,
   RouterProvider,
 } from "react-router-dom";
