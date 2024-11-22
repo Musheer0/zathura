@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className='md:px-20 px-5 sticky top-0  bg-zinc-50/20 backdrop-blur-xl z-10 border-b  flex items-center w-full justify-between py-5'>
       <div className="logo flex items-center gap-2">
-      <img src="zatura-text-light.png" alt="logo" className='h-5' />
+      <img src="./zatura-text-light.png" alt="logo" className='h-5' />
       </div>
    <Links/>
    <a href="https://github.com/ZathuraDbg/ZathuraDbg/releases">

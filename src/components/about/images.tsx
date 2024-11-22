@@ -4,9 +4,9 @@ import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'; // React Icons
 
 const ImageCarousel = () => {
   const images = [
-    'screenshot1.webp',
-    'screenshot2.webp',
-    'screenshot3.png'
+    './screenshot1.webp',
+    './screenshot2.webp',
+    './screenshot3.png'
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

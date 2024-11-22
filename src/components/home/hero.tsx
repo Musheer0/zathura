@@ -9,7 +9,7 @@ const Hero = () => {
               boxShadow: '-4px 15px 20px rgb(0,0,0,.2)'
              }}
        >
-          <img src="logo.webp" alt="logo" />
+          <img src="./logo.webp" alt="logo" />
        </div>
        <GitHubStars/>
        <h1 className='text-[10vw]  sm:text-[6vw] md:text-[5vw] lg:text-[4vw] font-semibold leading-none dm-sans'>
@@ -48,8 +48,8 @@ const Hero = () => {
             boxShadow: '-4px 10px 25px rgb(0,0,0,.4)'
            }}
       >
-        <img src="backdrop.png" alt="" className='absolute w-[300px] -left-20 -top-20 opacity-5 ' />
-        <img src="screenshot2-cropped.png" alt="hero-img" className='relative   rounded-l-lg w-full h-full  object-left-top object-cover ' />
+        <img src="./backdrop.png" alt="" className='absolute w-[300px] -left-20 -top-20 opacity-5 ' />
+        <img src="./screenshot2-cropped.png" alt="hero-img" className='relative   rounded-l-lg w-full h-full  object-left-top object-cover ' />
       </div>
     </div>
   )

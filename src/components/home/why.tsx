@@ -45,7 +45,7 @@ const WhyZatura = () => {
           repeat: Infinity
         }}
       >
-        <img src="bento/bento(1).png" alt="bento" className='w-[200px] pointer-events-none'  draggable='false'/>
+        <img src="./bento/bento(1).png" alt="bento" className='w-[200px] pointer-events-none'  draggable='false'/>
       </motion.div>
 
       <motion.div
@@ -66,7 +66,7 @@ const WhyZatura = () => {
         }}
         
       >
-        <img src="bento/bento(2).png" alt="bento" className='w-[200px]'   draggable='false'/>
+        <img src="./bento/bento(2).png" alt="bento" className='w-[200px]'   draggable='false'/>
       </motion.div>
 
       <motion.div
@@ -87,7 +87,7 @@ const WhyZatura = () => {
         }}
       >
 
-        <img src="bento/bento(3).png" alt="bento" className='w-[200px]'  draggable='false'/>
+        <img src="./bento/bento(3).png" alt="bento" className='w-[200px]'  draggable='false'/>
       </motion.div>
 
       <motion.div
@@ -107,7 +107,7 @@ const WhyZatura = () => {
           repeat: Infinity
         }}
       >
-        <img src="bento/bento(4).png" alt="bento" className='w-[200px]'  draggable='false'/>
+        <img src="./bento/bento(4).png" alt="bento" className='w-[200px]'  draggable='false'/>
       </motion.div>
       <motion.h1
       variants={containerVariants}
