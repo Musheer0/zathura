@@ -2,6 +2,7 @@
 
 import {
   createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 
@@ -10,7 +11,7 @@ import Footer from "./components/home/footer";
 import About from "./components/about/about";
 import ErrorPage from "./components/error";
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <Home/>,

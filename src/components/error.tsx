@@ -7,7 +7,7 @@ const ErrorPage: React.FC = () => {
       <div className="text-center p-5 max-w-xs mx-auto">
         {/* Logo Section */}
         <img 
-          src="./logo.webp" 
+          src="/zathura/logo.webp" 
           alt="Zathura DGB Logo"
           className="mx-auto mb-4 w-32 h-32 object-contain"
         />
