@@ -29,12 +29,12 @@ jobs:
         run: npm run build
 
       - name: Disable Jekyll
-        run: touch ./dist/.nojekyll  # Change to ./build/.nojekyll if using Create React App
+        run: touch ./dist/.nojekyll  # Change to ./build/.nojekyll if your build output is in the "build" folder
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # Adjust this if your output directory is different
+          path: ./dist  # Adjust if your build output directory is different
 
   deploy:
     runs-on: ubuntu-latest
